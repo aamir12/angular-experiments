@@ -27,9 +27,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              {
+                "input":"src/assets/country.css",
+                "bundleName": "country",
+                "inject": false
+              },
+              {
+                "input":"src/assets/person.css",
+                "bundleName": "person",
+                "inject": false
+              }  
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input":"src/assets/custom.js",
+                "bundleName": "custom",
+                "inject": false
+              }
+            ]
           },
           "configurations": {
             "production": {
