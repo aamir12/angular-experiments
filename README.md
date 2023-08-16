@@ -1,11 +1,39 @@
-# Experiment
+# Angular Experiment
+## Features
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+- Load CSS and Javascript file dynamically.
 
-## Development server
+## Installation
+angular.json
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-## Content
-Load CSS and Javascript file dynamically.
+```
+"build": {
+          "options": {
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css",
+              {
+                "input":"src/assets/country.css",
+                "bundleName": "country",
+                "inject": false
+              },
+              {
+                "input":"src/assets/person.css",
+                "bundleName": "person",
+                "inject": false
+              }  
+            ],
+            "scripts": [
+              {
+                "input":"src/assets/custom.js",
+                "bundleName": "custom",
+                "inject": false
+              }
+            ]
+          }
+        }
+```
+- Rest of the thing is reside in file loader service and filer loader config
