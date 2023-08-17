@@ -27,14 +27,15 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
               {
-                "input":"src/assets/country.css",
+                "input": "src/assets/country.css",
                 "bundleName": "country",
                 "inject": false
               },
               {
-                "input":"src/assets/person.css",
+                "input": "src/assets/person.css",
                 "bundleName": "person",
                 "inject": false
               }  

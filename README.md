@@ -2,6 +2,7 @@
 ## Features
 
 - Load CSS and Javascript file dynamically.
+- Dynamic load modal/dialog component (LazyDialogService).
 
 ## Installation
 angular.json

@@ -5,11 +5,13 @@ import { PersonComponent }  from './person.component';
 import { PersonListComponent }  from './person-list/person.list.component';
 import { PersonService } from './services/person.service';
 import { PersonRoutingModule }  from './person-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [     
     CommonModule,
 		ReactiveFormsModule,
+    NgbModule,
 		PersonRoutingModule
   ], 
   declarations: [
